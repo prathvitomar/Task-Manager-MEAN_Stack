@@ -17,8 +17,8 @@ export class EditListComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (params: Params) => {
-        this.listId = params.listId;
-        console.log(params.listId);
+        this.listId = params['listId'];
+        console.log(params['listId']);
       }
     )
   }

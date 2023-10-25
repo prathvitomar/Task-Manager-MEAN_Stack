@@ -18,8 +18,8 @@ export class EditTaskComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (params: Params) => {
-        this.taskId = params.taskId;
-        this.listId = params.listId;
+        this.taskId = params['taskId'];
+        this.listId = params['listId'];
       }
     )
   }
